@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+#chicken{
+  background-color: #FFC0CB	;
+  font-size: 20px;
+  border: solid #000;
+  border-width: 0px 0px 2px 2px;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  padding-left: 20px;
+}
+
+#beef{
+  background-color: #FF0000;
+  color: white;
+  font-size: 20px;
+  border: solid #000;
+  border-width: 0px 0px 2px 2px;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  padding-left: 20px;
+}
+
+#sushi{
+  background-color: #F1C27D;
+  font-size: 20px;
+  border: solid #000;
+  border-width: 0px 0px 2px 2px;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+  padding-left: 20px;
+}
+
+#one, #two, #three{
+  position: relative;
+  width:28%;
+  border: solid #000;
+  background-color: gray;
+  display:inline;
+  font-size: 20px;
+  padding : 10px;
+  margin: 10px black;
+}
+#container{
+  text-align: center;
+}
+#container > div{
+  display: inline-block;
+  margin: 20px;
+}
+
+@media (min-width:992px){
+}
+
+@media (min-width:768px) and (max-width:991px){
+  .#one,#two{
+    float: left;
+  }
+  #one{
+    width: 40%
+  }
+  #two {
+    width: 40%;
+  }
+   #three{
+    width:86%;
+  }
+}
+
+@media (max-width:767px){
+  #container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
+  #container >div{
+    width: 80%;
+  }
+}
